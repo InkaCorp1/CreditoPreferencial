@@ -2,6 +2,8 @@
 <html>
 <head>
 <title>Contenedor de Iframe</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
   html, body {
     margin: 0;
@@ -26,11 +28,11 @@
 
   // 2. Define la URL base de tu script de Google.
   const baseUrl = 'https://script.google.com/macros/s/AKfycbyJkUHxlwVj62CIwkZG0hvse05oaSqgVqLEG_rIgNmlaBc7gqdKk3Q6BxqmpZaINbwfig/exec';
-  
+ 
   // 3. Obtiene la cadena de consulta (los parámetros) de la URL de la página actual.
   // Por ejemplo, si la URL es "mipagina.html?IDCRÉDITO=123", esto será "?IDCRÉDITO=123".
   const queryString = window.location.search;
-  
+ 
   // 4. Combina la URL base con los parámetros y la asigna como fuente del iframe.
   iframe.src = baseUrl + queryString;
 </script>
